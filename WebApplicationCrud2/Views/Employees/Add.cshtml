@@ -1,22 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model WebApplicationCrud2.Models.AddEmployeeViewModel
 <h1>Add Employee</h1>
 <form method="post" action="Add">
+
     <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <label for="">Name</label>
+        <input type="text" class="form-control" asp-for="Name" />
     </div>
+
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <label for="d">Enter Email</label>
+        <input type="email" class="form-control" asp-for="Email" />
+
+        <div class="form-group">
+            <label for="">Enter Salary</label>
+            <input type="number" class="form-control" asp-for="Salary" />
+        </div>
     </div>
     <button type="submit" class="btn">Submit</button>
 </form>
