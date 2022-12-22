@@ -18,9 +18,7 @@ namespace WebApplicationCrud2.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Salary = table.Column<long>(type: "bigint", nullable: false),
-                    DateOfBirty = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Department = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Salary = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {

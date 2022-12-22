@@ -12,7 +12,7 @@ using WebApplicationCrud2.Data;
 namespace WebApplicationCrud2.Migrations
 {
     [DbContext(typeof(MVCDemoDbContext))]
-    [Migration("20221219183749_Initial-Migration")]
+    [Migration("20221221193206_Initial-Migration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -30,13 +30,6 @@ namespace WebApplicationCrud2.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("DateOfBirty")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Department")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
